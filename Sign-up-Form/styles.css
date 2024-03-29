@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181818;
+}
+
+main {
+    margin: 0;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+}
+
+.left-side {
+    background-image: url("./assets/lianhao-qu-qoRcm33qIN0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 30%;
+}
+
+.odin-bar {
+    background-color: rgba(0,0,0, 0.1);
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 1.2px;
+    position: absolute;
+    top: 25%;
+    width: 30%;
+    font-family: 'Raleway',serif;
+    color: white;
+}
+
+.odin-bar > span {
+    display: flex;
+    align-items: center;
+}
+.odin-bar > img {
+    height: 150px;
+}
+
+.right-side {
+    flex-wrap: wrap;
+    min-width: 70%;
+    padding: 200px 20px;
+}
+
+.right-side > header {
+    word-wrap: break-word;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.verify {
+    font-size: 1.25rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.info-column {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    position: relative;
+    left: 1rem;
+    width: 98%
+}
+
+.info {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.info > input {
+    height: 25px;
+    font-size: 1rem;
+    margin: 5px auto;
+    max-width: 100%;
+}
+
+.info > input:focus {
+    outline-color: #646e66;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 0.3px;
+}
+
+hr {
+    margin: 30px;
+    max-width: 100%;
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+button {
+    margin: 10px;
+    padding: 15px;
+    width: 15%;
+    border: none;
+    border-radius: 8px;
+    background-color: #8e9991;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.5s ease;
+}
+
+button:hover {
+    transition: 0.5s;
+    transform: translateX(5px);
+    background-color: #646e66;
+    position: relative;
+    bottom: 5px;
+}
+
+h3 {
+    margin: 10px;
+    padding: 15px;
+    transform: translateX(-0.75rem);
+}
+
+a {
+    text-decoration: none;
+    color: #646e66;
+}
+
+input.invalid {
+    border-color: red;
+    border-radius: 3px;
+}
+
+.passMissMatch {
+
+}
+
+
+@media (max-width: 1200px) {
+    .odin-bar {
+        display: none;
+    }
+
+    .right-side {
+        margin: 0;
+        padding-top: 10%;
+    }
+    
+    main {
+        font-size: 0.75rem;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    header > h3 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    small {
+        display: none;
+    }
+
+    label {
+        font-size: 0.75rem;
+    }
+
+
+    button {
+        width: 55%;
+    }
+}
+

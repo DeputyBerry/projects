@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font (Raleway) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <main>
+        <section class="left-side">
+            <div class="odin-bar">
+                <img src="./assets/odin-lined.png"><span>ODIN</span>
+            </div>
+        </section>
+        <section class="right-side">
+            <header>
+                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Praesentium harum unde tenetur dignissimos quia eaque suscipit,<br> iste mollitia voluptas non placeat, quos, neque officiis cum?<br>
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+            <br>
+            <br>
+                <h3>Lets do this!</h3>
+            </h1>
+            </header>
+            <form method="POST" action="#">
+                <div class="info-column">
+                    <div class="info">
+                        <label for="first-name">First Name </label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="info">
+                        <label for="last-name">Last Name </label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                </div>
+                <div class="info-column">
+                    <div class="info">
+                        <label for="Email">Email </label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="info">
+                        <label for="phone-num">Phone Number </label>
+                        <input type="tel" name="phone-num" id="phone-num" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br>
+                        <small>Format: 123-456-7890</small><br><br>
+                    </div>
+                </div>
+                <div class="info-column">
+                    <div class="info">
+                        <label for="password">Password </label>
+                        <input type="password" name="password" id="password" required>
+                        <p class="passMissMatch">* Passwords do not match</p>
+                    </div>
+                    <div class="info">
+                        <label for="password"> Confirm Password </label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                </div>
+                <hr>
+                <button type="submit">Create Account</button>
+            </form>
+            <h3 class="verify">Already have an account? <a href="#">Log in</a></h3>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
