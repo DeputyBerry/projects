@@ -1,0 +1,174 @@
+:root {
+    /* Primary Colors */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Darkraspberry: hsl(332, 51%, 32%);
+
+    /* Neutral Colors */
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+
+    /* Typography */
+    --main-font: 'Young-Serif', sans-serif;
+    --secondary-font: 'Outfit', sans-serif;
+}
+
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--secondary-font);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 30px auto;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--Nutmeg);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 0 30px;
+    font-family: var(--secondary-font);
+    color: var(--DarkCharcoal);
+}
+
+header > img {
+    max-width: 100%;
+}
+
+header > h1, p {
+    padding: 0 30px;
+}
+
+header > p {
+    margin-bottom: 30px;
+}
+
+header > p > br {
+    display: none;
+}
+
+hr {
+    height: 1px;
+    margin: 30px;
+    color: var(--LightGrey);
+    opacity: 0.2;
+}
+
+
+ul li + span{
+    margin-right: 20px;
+}
+
+ul li::marker,
+ol li::marker {
+    color: var(--Nutmeg);
+}
+
+li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+li > h5 {
+    display: inline;
+    color: var(--WengeBrown);
+}
+
+
+.prep > h3 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: var(--Darkraspberry)
+}
+
+.prep > ul > * {
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+.ingredients > ul,
+.instructions > ol {
+    margin-left: 25px;
+}
+
+.nutrition > p {
+    padding: 0;
+    margin: 10px auto;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+tr td:first-child {
+    padding-left: 40px;
+}
+
+tr td:last-child {
+    color: var(--Nutmeg);
+    border-bottom: 1px solid var(--LightGrey);
+    width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    body {
+        padding: 50px;
+    }
+
+    header > img {
+        border-radius: 15px;
+        width: 100%;
+    }
+
+   header > h1, 
+   header > p {
+        padding: 0;
+    }
+
+    h1 > br {
+        display: none;
+    }
+
+    .prep {
+        display: flex;
+        flex-direction: column;
+        background-color: hsla(332, 51%, 32%, 0.1);
+        border-radius: 15px;
+        height: 10rem;
+        justify-content: center;
+        align-content: center;
+    }
+
+    table{
+        width: 80%;
+        table-layout: auto;
+    }
+
+    tr td:first-child {
+        position: relative;
+        left: 15rem;
+    }
+
+}
